@@ -1,0 +1,17 @@
+PODS:
+  - FileBrowser (0.2.0)
+  - SQLite.swift (0.11.3):
+    - SQLite.swift/standard (= 0.11.3)
+  - SQLite.swift/standard (0.11.3)
+
+DEPENDENCIES:
+  - FileBrowser (~> 0.2)
+  - SQLite.swift (~> 0.11.3)
+
+SPEC CHECKSUMS:
+  FileBrowser: af8abc035daca66a6066351ae162c4af4c6b24dd
+  SQLite.swift: 99b36c22084427f0abbeb957556ce1528cf10bb3
+
+PODFILE CHECKSUM: c8412554b75fd5721b6bbd9747a8ea4e6d99cc6a
+
+COCOAPODS: 1.2.1

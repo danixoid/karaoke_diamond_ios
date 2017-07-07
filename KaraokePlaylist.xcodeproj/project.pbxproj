@@ -1,0 +1,774 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		443F9AAA1F0910900036EF75 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443F9AA91F0910900036EF75 /* AppDelegate.swift */; };
+		443F9AAC1F0910900036EF75 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443F9AAB1F0910900036EF75 /* ViewController.swift */; };
+		443F9AAF1F0910900036EF75 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 443F9AAD1F0910900036EF75 /* Main.storyboard */; };
+		443F9AB11F0910900036EF75 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 443F9AB01F0910900036EF75 /* Assets.xcassets */; };
+		443F9AB41F0910900036EF75 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 443F9AB21F0910900036EF75 /* LaunchScreen.storyboard */; };
+		443F9ABF1F0910900036EF75 /* KaraokePlaylistTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443F9ABE1F0910900036EF75 /* KaraokePlaylistTests.swift */; };
+		443F9ACA1F0910900036EF75 /* KaraokePlaylistUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443F9AC91F0910900036EF75 /* KaraokePlaylistUITests.swift */; };
+		445CB4A61F0D6C9D00BB6CB2 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445CB4A51F0D6C9D00BB6CB2 /* DetailViewController.swift */; };
+		445CB4A81F0D727900BB6CB2 /* OptionsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445CB4A71F0D727900BB6CB2 /* OptionsController.swift */; };
+		445CB4AA1F0DF44700BB6CB2 /* FileBrowser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 445CB4A91F0DF44700BB6CB2 /* FileBrowser.framework */; };
+		445CB52E1F0E28A400BB6CB2 /* libDHxlsReaderIOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 445CB52D1F0E28A400BB6CB2 /* libDHxlsReaderIOS.a */; };
+		445CB5431F0E370500BB6CB2 /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 445CB5421F0E370500BB6CB2 /* libiconv.tbd */; };
+		447EAA8A1F0FDDFE0075488F /* bg_karaoke.png in Resources */ = {isa = PBXBuildFile; fileRef = 447EAA871F0FDDFE0075488F /* bg_karaoke.png */; };
+		447EAA8B1F0FDDFE0075488F /* bg_3.png in Resources */ = {isa = PBXBuildFile; fileRef = 447EAA881F0FDDFE0075488F /* bg_3.png */; };
+		447EAA8C1F0FDDFE0075488F /* bg_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 447EAA891F0FDDFE0075488F /* bg_2.png */; };
+		44AFC39E1F0D4CEF006BD1D8 /* Karaoke.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44AFC39D1F0D4CEF006BD1D8 /* Karaoke.swift */; };
+		44AFC3A01F0D50E7006BD1D8 /* SQLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 440139421F09580300D7D97C /* SQLite.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		443F9ABB1F0910900036EF75 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 443F9A9E1F0910900036EF75 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 443F9AA51F0910900036EF75;
+			remoteInfo = KaraokePlaylist;
+		};
+		443F9AC61F0910900036EF75 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 443F9A9E1F0910900036EF75 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 443F9AA51F0910900036EF75;
+			remoteInfo = KaraokePlaylist;
+		};
+		445CB5341F0E296A00BB6CB2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 445CB52F1F0E296A00BB6CB2 /* DHxlsReaderIOS.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DEB78ABF14BB9ABF00845894;
+			remoteInfo = DHxlsReaderIOS;
+		};
+		445CB5361F0E296A00BB6CB2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 445CB52F1F0E296A00BB6CB2 /* DHxlsReaderIOS.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 97BCBBE716DD4E9A00FF978C;
+			remoteInfo = DHxlsReader;
+		};
+		445CB53A1F0E2AC800BB6CB2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 445CB52F1F0E296A00BB6CB2 /* DHxlsReaderIOS.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = DEB78ABE14BB9ABF00845894;
+			remoteInfo = DHxlsReaderIOS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		445CB4D61F0E084900BB6CB2 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		219FB49803172660C86362CD /* Pods_KaraokePlaylist.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KaraokePlaylist.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		22508D56CC954805E61CD50C /* Pods-KaraokePlaylist.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KaraokePlaylist.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KaraokePlaylist/Pods-KaraokePlaylist.debug.xcconfig"; sourceTree = "<group>"; };
+		440139421F09580300D7D97C /* SQLite.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SQLite.framework; path = "../../Library/Developer/Xcode/DerivedData/KaraokePlaylist-awlnvnzkiutgsuewocjqjoxtuotj/Build/Products/Debug-iphoneos/SQLite.swift/SQLite.framework"; sourceTree = "<group>"; };
+		443F9AA61F0910900036EF75 /* KaraokePlaylist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KaraokePlaylist.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		443F9AA91F0910900036EF75 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		443F9AAB1F0910900036EF75 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		443F9AAE1F0910900036EF75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		443F9AB01F0910900036EF75 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		443F9AB31F0910900036EF75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		443F9AB51F0910900036EF75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		443F9ABA1F0910900036EF75 /* KaraokePlaylistTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KaraokePlaylistTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		443F9ABE1F0910900036EF75 /* KaraokePlaylistTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KaraokePlaylistTests.swift; sourceTree = "<group>"; };
+		443F9AC01F0910900036EF75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		443F9AC51F0910900036EF75 /* KaraokePlaylistUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KaraokePlaylistUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		443F9AC91F0910900036EF75 /* KaraokePlaylistUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KaraokePlaylistUITests.swift; sourceTree = "<group>"; };
+		443F9ACB1F0910900036EF75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		443F9AD81F0913E00036EF75 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		445CB4A51F0D6C9D00BB6CB2 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		445CB4A71F0D727900BB6CB2 /* OptionsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionsController.swift; sourceTree = "<group>"; };
+		445CB4A91F0DF44700BB6CB2 /* FileBrowser.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FileBrowser.framework; path = "../../Library/Developer/Xcode/DerivedData/KaraokePlaylist-awlnvnzkiutgsuewocjqjoxtuotj/Build/Products/Debug-iphoneos/FileBrowser/FileBrowser.framework"; sourceTree = "<group>"; };
+		445CB52D1F0E28A400BB6CB2 /* libDHxlsReaderIOS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libDHxlsReaderIOS.a; path = lib/libDHxlsReaderIOS.a; sourceTree = "<group>"; };
+		445CB52F1F0E296A00BB6CB2 /* DHxlsReaderIOS.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = DHxlsReaderIOS.xcodeproj; path = ../../Downloads/DHlibxls/DHxlsReaderIOS.xcodeproj; sourceTree = "<group>"; };
+		445CB53E1F0E2E6200BB6CB2 /* DHxlsBrigdeHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DHxlsBrigdeHeader.h; sourceTree = "<group>"; };
+		445CB5421F0E370500BB6CB2 /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
+		447EAA871F0FDDFE0075488F /* bg_karaoke.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bg_karaoke.png; path = ../../Downloads/bg_karaoke.png; sourceTree = "<group>"; };
+		447EAA881F0FDDFE0075488F /* bg_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bg_3.png; path = ../../Downloads/bg_3.png; sourceTree = "<group>"; };
+		447EAA891F0FDDFE0075488F /* bg_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bg_2.png; path = ../../Downloads/bg_2.png; sourceTree = "<group>"; };
+		44AFC39D1F0D4CEF006BD1D8 /* Karaoke.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Karaoke.swift; sourceTree = "<group>"; };
+		AB701781F1F834D61CE70542 /* Pods-KaraokePlaylist.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KaraokePlaylist.release.xcconfig"; path = "Pods/Target Support Files/Pods-KaraokePlaylist/Pods-KaraokePlaylist.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		443F9AA31F0910900036EF75 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				445CB5431F0E370500BB6CB2 /* libiconv.tbd in Frameworks */,
+				445CB52E1F0E28A400BB6CB2 /* libDHxlsReaderIOS.a in Frameworks */,
+				445CB4AA1F0DF44700BB6CB2 /* FileBrowser.framework in Frameworks */,
+				44AFC3A01F0D50E7006BD1D8 /* SQLite.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		443F9AB71F0910900036EF75 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		443F9AC21F0910900036EF75 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		443F9A9D1F0910900036EF75 = {
+			isa = PBXGroup;
+			children = (
+				447EAA871F0FDDFE0075488F /* bg_karaoke.png */,
+				447EAA881F0FDDFE0075488F /* bg_3.png */,
+				447EAA891F0FDDFE0075488F /* bg_2.png */,
+				445CB52F1F0E296A00BB6CB2 /* DHxlsReaderIOS.xcodeproj */,
+				443F9AA81F0910900036EF75 /* KaraokePlaylist */,
+				443F9ABD1F0910900036EF75 /* KaraokePlaylistTests */,
+				443F9AC81F0910900036EF75 /* KaraokePlaylistUITests */,
+				443F9AA71F0910900036EF75 /* Products */,
+				443F9AD71F0913E00036EF75 /* Frameworks */,
+				EA3CB172B79C456F33183E9C /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		443F9AA71F0910900036EF75 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				443F9AA61F0910900036EF75 /* KaraokePlaylist.app */,
+				443F9ABA1F0910900036EF75 /* KaraokePlaylistTests.xctest */,
+				443F9AC51F0910900036EF75 /* KaraokePlaylistUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		443F9AA81F0910900036EF75 /* KaraokePlaylist */ = {
+			isa = PBXGroup;
+			children = (
+				445CB53E1F0E2E6200BB6CB2 /* DHxlsBrigdeHeader.h */,
+				443F9AA91F0910900036EF75 /* AppDelegate.swift */,
+				443F9AAB1F0910900036EF75 /* ViewController.swift */,
+				445CB4A51F0D6C9D00BB6CB2 /* DetailViewController.swift */,
+				445CB4A71F0D727900BB6CB2 /* OptionsController.swift */,
+				443F9AAD1F0910900036EF75 /* Main.storyboard */,
+				443F9AB01F0910900036EF75 /* Assets.xcassets */,
+				443F9AB21F0910900036EF75 /* LaunchScreen.storyboard */,
+				443F9AB51F0910900036EF75 /* Info.plist */,
+				44AFC39D1F0D4CEF006BD1D8 /* Karaoke.swift */,
+			);
+			path = KaraokePlaylist;
+			sourceTree = "<group>";
+		};
+		443F9ABD1F0910900036EF75 /* KaraokePlaylistTests */ = {
+			isa = PBXGroup;
+			children = (
+				443F9ABE1F0910900036EF75 /* KaraokePlaylistTests.swift */,
+				443F9AC01F0910900036EF75 /* Info.plist */,
+			);
+			path = KaraokePlaylistTests;
+			sourceTree = "<group>";
+		};
+		443F9AC81F0910900036EF75 /* KaraokePlaylistUITests */ = {
+			isa = PBXGroup;
+			children = (
+				443F9AC91F0910900036EF75 /* KaraokePlaylistUITests.swift */,
+				443F9ACB1F0910900036EF75 /* Info.plist */,
+			);
+			path = KaraokePlaylistUITests;
+			sourceTree = "<group>";
+		};
+		443F9AD71F0913E00036EF75 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				445CB5421F0E370500BB6CB2 /* libiconv.tbd */,
+				445CB52D1F0E28A400BB6CB2 /* libDHxlsReaderIOS.a */,
+				445CB4A91F0DF44700BB6CB2 /* FileBrowser.framework */,
+				440139421F09580300D7D97C /* SQLite.framework */,
+				443F9AD81F0913E00036EF75 /* libsqlite3.tbd */,
+				219FB49803172660C86362CD /* Pods_KaraokePlaylist.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		445CB5301F0E296A00BB6CB2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				445CB5351F0E296A00BB6CB2 /* libDHxlsReaderIOS.a */,
+				445CB5371F0E296A00BB6CB2 /* libDHxlsReader.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EA3CB172B79C456F33183E9C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				22508D56CC954805E61CD50C /* Pods-KaraokePlaylist.debug.xcconfig */,
+				AB701781F1F834D61CE70542 /* Pods-KaraokePlaylist.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		443F9AA51F0910900036EF75 /* KaraokePlaylist */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 443F9ACE1F0910900036EF75 /* Build configuration list for PBXNativeTarget "KaraokePlaylist" */;
+			buildPhases = (
+				46BA54855EA216D955EF14E9 /* [CP] Check Pods Manifest.lock */,
+				443F9AA21F0910900036EF75 /* Sources */,
+				443F9AA31F0910900036EF75 /* Frameworks */,
+				443F9AA41F0910900036EF75 /* Resources */,
+				68634D320BE16889B4CAB359 /* [CP] Embed Pods Frameworks */,
+				CB0FA34AA7E2F4B7CB289A89 /* [CP] Copy Pods Resources */,
+				445CB4D61F0E084900BB6CB2 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				445CB53B1F0E2AC800BB6CB2 /* PBXTargetDependency */,
+			);
+			name = KaraokePlaylist;
+			productName = KaraokePlaylist;
+			productReference = 443F9AA61F0910900036EF75 /* KaraokePlaylist.app */;
+			productType = "com.apple.product-type.application";
+		};
+		443F9AB91F0910900036EF75 /* KaraokePlaylistTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 443F9AD11F0910900036EF75 /* Build configuration list for PBXNativeTarget "KaraokePlaylistTests" */;
+			buildPhases = (
+				443F9AB61F0910900036EF75 /* Sources */,
+				443F9AB71F0910900036EF75 /* Frameworks */,
+				443F9AB81F0910900036EF75 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				443F9ABC1F0910900036EF75 /* PBXTargetDependency */,
+			);
+			name = KaraokePlaylistTests;
+			productName = KaraokePlaylistTests;
+			productReference = 443F9ABA1F0910900036EF75 /* KaraokePlaylistTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		443F9AC41F0910900036EF75 /* KaraokePlaylistUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 443F9AD41F0910900036EF75 /* Build configuration list for PBXNativeTarget "KaraokePlaylistUITests" */;
+			buildPhases = (
+				443F9AC11F0910900036EF75 /* Sources */,
+				443F9AC21F0910900036EF75 /* Frameworks */,
+				443F9AC31F0910900036EF75 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				443F9AC71F0910900036EF75 /* PBXTargetDependency */,
+			);
+			name = KaraokePlaylistUITests;
+			productName = KaraokePlaylistUITests;
+			productReference = 443F9AC51F0910900036EF75 /* KaraokePlaylistUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		443F9A9E1F0910900036EF75 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Данияр";
+				TargetAttributes = {
+					443F9AA51F0910900036EF75 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 7VFNJLMWRX;
+						ProvisioningStyle = Automatic;
+					};
+					443F9AB91F0910900036EF75 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 7VFNJLMWRX;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 443F9AA51F0910900036EF75;
+					};
+					443F9AC41F0910900036EF75 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 7VFNJLMWRX;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 443F9AA51F0910900036EF75;
+					};
+				};
+			};
+			buildConfigurationList = 443F9AA11F0910900036EF75 /* Build configuration list for PBXProject "KaraokePlaylist" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 443F9A9D1F0910900036EF75;
+			productRefGroup = 443F9AA71F0910900036EF75 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 445CB5301F0E296A00BB6CB2 /* Products */;
+					ProjectRef = 445CB52F1F0E296A00BB6CB2 /* DHxlsReaderIOS.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				443F9AA51F0910900036EF75 /* KaraokePlaylist */,
+				443F9AB91F0910900036EF75 /* KaraokePlaylistTests */,
+				443F9AC41F0910900036EF75 /* KaraokePlaylistUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		445CB5351F0E296A00BB6CB2 /* libDHxlsReaderIOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libDHxlsReaderIOS.a;
+			remoteRef = 445CB5341F0E296A00BB6CB2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		445CB5371F0E296A00BB6CB2 /* libDHxlsReader.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libDHxlsReader.a;
+			remoteRef = 445CB5361F0E296A00BB6CB2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		443F9AA41F0910900036EF75 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				443F9AB41F0910900036EF75 /* LaunchScreen.storyboard in Resources */,
+				447EAA8B1F0FDDFE0075488F /* bg_3.png in Resources */,
+				443F9AB11F0910900036EF75 /* Assets.xcassets in Resources */,
+				443F9AAF1F0910900036EF75 /* Main.storyboard in Resources */,
+				447EAA8A1F0FDDFE0075488F /* bg_karaoke.png in Resources */,
+				447EAA8C1F0FDDFE0075488F /* bg_2.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		443F9AB81F0910900036EF75 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		443F9AC31F0910900036EF75 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		46BA54855EA216D955EF14E9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		68634D320BE16889B4CAB359 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KaraokePlaylist/Pods-KaraokePlaylist-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CB0FA34AA7E2F4B7CB289A89 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KaraokePlaylist/Pods-KaraokePlaylist-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		443F9AA21F0910900036EF75 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				443F9AAC1F0910900036EF75 /* ViewController.swift in Sources */,
+				443F9AAA1F0910900036EF75 /* AppDelegate.swift in Sources */,
+				44AFC39E1F0D4CEF006BD1D8 /* Karaoke.swift in Sources */,
+				445CB4A61F0D6C9D00BB6CB2 /* DetailViewController.swift in Sources */,
+				445CB4A81F0D727900BB6CB2 /* OptionsController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		443F9AB61F0910900036EF75 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				443F9ABF1F0910900036EF75 /* KaraokePlaylistTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		443F9AC11F0910900036EF75 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				443F9ACA1F0910900036EF75 /* KaraokePlaylistUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		443F9ABC1F0910900036EF75 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 443F9AA51F0910900036EF75 /* KaraokePlaylist */;
+			targetProxy = 443F9ABB1F0910900036EF75 /* PBXContainerItemProxy */;
+		};
+		443F9AC71F0910900036EF75 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 443F9AA51F0910900036EF75 /* KaraokePlaylist */;
+			targetProxy = 443F9AC61F0910900036EF75 /* PBXContainerItemProxy */;
+		};
+		445CB53B1F0E2AC800BB6CB2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DHxlsReaderIOS;
+			targetProxy = 445CB53A1F0E2AC800BB6CB2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		443F9AAD1F0910900036EF75 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				443F9AAE1F0910900036EF75 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		443F9AB21F0910900036EF75 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				443F9AB31F0910900036EF75 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		443F9ACC1F0910900036EF75 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		443F9ACD1F0910900036EF75 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		443F9ACF1F0910900036EF75 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 22508D56CC954805E61CD50C /* Pods-KaraokePlaylist.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 7VFNJLMWRX;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/lib",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = KaraokePlaylist/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/libxls/lib,
+					"$(PROJECT_DIR)/lib",
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"SQLite\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kz.bapps.KaraokePlaylist;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/KaraokePlaylist/DHxlsBrigdeHeader.h";
+				SWIFT_VERSION = 3.0;
+				USER_HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/../../Downloads/DHlibxls/**";
+			};
+			name = Debug;
+		};
+		443F9AD01F0910900036EF75 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB701781F1F834D61CE70542 /* Pods-KaraokePlaylist.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 7VFNJLMWRX;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/lib",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = KaraokePlaylist/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/libxls/lib,
+					"$(PROJECT_DIR)/lib",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"SQLite\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kz.bapps.KaraokePlaylist;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/KaraokePlaylist/DHxlsBrigdeHeader.h";
+				SWIFT_VERSION = 3.0;
+				USER_HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/../../Downloads/DHlibxls/**";
+			};
+			name = Release;
+		};
+		443F9AD21F0910900036EF75 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 7VFNJLMWRX;
+				INFOPLIST_FILE = KaraokePlaylistTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = kz.bapps.KaraokePlaylistTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KaraokePlaylist.app/KaraokePlaylist";
+			};
+			name = Debug;
+		};
+		443F9AD31F0910900036EF75 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 7VFNJLMWRX;
+				INFOPLIST_FILE = KaraokePlaylistTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = kz.bapps.KaraokePlaylistTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KaraokePlaylist.app/KaraokePlaylist";
+			};
+			name = Release;
+		};
+		443F9AD51F0910900036EF75 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 7VFNJLMWRX;
+				INFOPLIST_FILE = KaraokePlaylistUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = kz.bapps.KaraokePlaylistUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = KaraokePlaylist;
+			};
+			name = Debug;
+		};
+		443F9AD61F0910900036EF75 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 7VFNJLMWRX;
+				INFOPLIST_FILE = KaraokePlaylistUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = kz.bapps.KaraokePlaylistUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = KaraokePlaylist;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		443F9AA11F0910900036EF75 /* Build configuration list for PBXProject "KaraokePlaylist" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				443F9ACC1F0910900036EF75 /* Debug */,
+				443F9ACD1F0910900036EF75 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		443F9ACE1F0910900036EF75 /* Build configuration list for PBXNativeTarget "KaraokePlaylist" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				443F9ACF1F0910900036EF75 /* Debug */,
+				443F9AD01F0910900036EF75 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		443F9AD11F0910900036EF75 /* Build configuration list for PBXNativeTarget "KaraokePlaylistTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				443F9AD21F0910900036EF75 /* Debug */,
+				443F9AD31F0910900036EF75 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		443F9AD41F0910900036EF75 /* Build configuration list for PBXNativeTarget "KaraokePlaylistUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				443F9AD51F0910900036EF75 /* Debug */,
+				443F9AD61F0910900036EF75 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 443F9A9E1F0910900036EF75 /* Project object */;
+}
