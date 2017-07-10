@@ -187,11 +187,11 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Xry-xQ-SMB" id="gLy-HC-R9W">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Загрузить XLS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OKz-ow-fqp">
-                                                    <rect key="frame" x="6" y="10" width="359" height="9"/>
+                                                    <rect key="frame" x="8" y="0.0" width="357" height="44"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                     <accessibility key="accessibilityConfiguration" identifier="loadXLS" label="Загрузить файл"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -205,11 +205,11 @@
                                         <rect key="frame" x="0.0" y="72" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Yvb-EN-LGz" id="TeF-DE-mhu">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Очистить базу" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mVM-HV-0EK">
-                                                    <rect key="frame" x="6" y="12" width="359" height="11"/>
+                                                    <rect key="frame" x="8" y="0.0" width="357" height="44"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                     <accessibility key="accessibilityConfiguration" identifier="loadXLS" label="Загрузить файл"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -223,11 +223,11 @@
                                         <rect key="frame" x="0.0" y="116" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Egq-Ms-kDM" id="ZOA-L9-rbv">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Сменить пароль" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3dA-6p-Qrd">
-                                                    <rect key="frame" x="2" y="10" width="363" height="13"/>
+                                                    <rect key="frame" x="8" y="0.0" width="357" height="44"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                     <accessibility key="accessibilityConfiguration" identifier="loadXLS" label="Загрузить файл"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -244,11 +244,11 @@
                                         <rect key="frame" x="0.0" y="160" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1VB-Wy-GpE" id="d47-oY-wtd">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Google Drive" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YpF-ln-XIN">
-                                                    <rect key="frame" x="2" y="10" width="363" height="13"/>
+                                                    <rect key="frame" x="8" y="0.0" width="357" height="44"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                     <accessibility key="accessibilityConfiguration" identifier="loadXLS" label="Загрузить файл"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -273,7 +273,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Fy-Xg-HTj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1508" y="-630"/>
+            <point key="canvasLocation" x="1508" y="-630.13493253373315"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="iNi-Lp-4go">
