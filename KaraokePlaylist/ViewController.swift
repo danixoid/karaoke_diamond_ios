@@ -11,11 +11,14 @@ import SQLite
 
 class ViewController: UITableViewController {
     
-    
     var detailViewController: DetailViewController? = nil
     var karaokes = [Karaoke]()
     let searchController = UISearchController(searchResultsController: nil)
     
+    struct defaultsKeys {
+        static let pswd = "password"
+    }
+
     let path = NSSearchPathForDirectoriesInDomains(
         .documentDirectory, .userDomainMask, true
         ).first!
@@ -37,7 +40,14 @@ class ViewController: UITableViewController {
             let controllers = splitViewController.viewControllers
             detailViewController = (controllers[controllers.count-1] as! UINavigationController).topViewController as? DetailViewController
         }
-
+        
+        
+        let defaults = UserDefaults.standard
+        if (defaults.string(forKey: defaultsKeys.pswd) == nil) {
+            let pass:String = "12345"
+            defaults.set(pass, forKey: defaultsKeys.pswd)
+        }
+        
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -115,7 +125,37 @@ class ViewController: UITableViewController {
         tableView.reloadData()
     }
     
+    
     // MARK: - Segues
+    override func shouldPerformSegue(withIdentifier identifier: String?, sender: Any?) -> Bool {
+        if identifier == "options" {
+            
+            
+            let newWordPrompt = UIAlertController(title: "Администрирование", message: "Введите пароль!", preferredStyle: UIAlertControllerStyle.alert)
+            newWordPrompt.addTextField(configurationHandler: { (textField: UITextField!) in
+                textField.placeholder = "Введите пароль"
+                })
+            newWordPrompt.addAction(UIAlertAction(title: "Отмена", style: UIAlertActionStyle.default, handler: nil))
+            newWordPrompt.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: {
+                alert -> Void in
+                
+                let passField = newWordPrompt.textFields![0] as UITextField
+                
+                let defaults = UserDefaults.standard
+                if let password = defaults.string(forKey: defaultsKeys.pswd) {
+                    if passField.text == password {
+                        self.performSegue(withIdentifier: "options", sender: self)
+                    }
+                }
+
+            
+            }))
+            present(newWordPrompt, animated: true, completion: nil)
+            
+            return false
+        }
+        return false
+    }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "options" {

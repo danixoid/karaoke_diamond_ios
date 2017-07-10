@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4436B5951F1216B8008E5ED5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4436B5941F1216B8008E5ED5 /* GoogleService-Info.plist */; };
+		4436B5981F121948008E5ED5 /* DriveController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4436B5971F121948008E5ED5 /* DriveController.swift */; };
 		443F9AAA1F0910900036EF75 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443F9AA91F0910900036EF75 /* AppDelegate.swift */; };
 		443F9AAC1F0910900036EF75 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443F9AAB1F0910900036EF75 /* ViewController.swift */; };
 		443F9AAF1F0910900036EF75 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 443F9AAD1F0910900036EF75 /* Main.storyboard */; };
@@ -24,6 +26,7 @@
 		447EAA8C1F0FDDFE0075488F /* bg_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 447EAA891F0FDDFE0075488F /* bg_2.png */; };
 		44AFC39E1F0D4CEF006BD1D8 /* Karaoke.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44AFC39D1F0D4CEF006BD1D8 /* Karaoke.swift */; };
 		44AFC3A01F0D50E7006BD1D8 /* SQLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 440139421F09580300D7D97C /* SQLite.framework */; };
+		4AF701988AB5FC9424C40BE1 /* Pods_KaraokePlaylist.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 219FB49803172660C86362CD /* Pods_KaraokePlaylist.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +84,8 @@
 		219FB49803172660C86362CD /* Pods_KaraokePlaylist.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KaraokePlaylist.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		22508D56CC954805E61CD50C /* Pods-KaraokePlaylist.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KaraokePlaylist.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KaraokePlaylist/Pods-KaraokePlaylist.debug.xcconfig"; sourceTree = "<group>"; };
 		440139421F09580300D7D97C /* SQLite.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SQLite.framework; path = "../../Library/Developer/Xcode/DerivedData/KaraokePlaylist-awlnvnzkiutgsuewocjqjoxtuotj/Build/Products/Debug-iphoneos/SQLite.swift/SQLite.framework"; sourceTree = "<group>"; };
+		4436B5941F1216B8008E5ED5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		4436B5971F121948008E5ED5 /* DriveController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DriveController.swift; sourceTree = "<group>"; };
 		443F9AA61F0910900036EF75 /* KaraokePlaylist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KaraokePlaylist.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		443F9AA91F0910900036EF75 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		443F9AAB1F0910900036EF75 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -118,6 +123,7 @@
 				445CB52E1F0E28A400BB6CB2 /* libDHxlsReaderIOS.a in Frameworks */,
 				445CB4AA1F0DF44700BB6CB2 /* FileBrowser.framework in Frameworks */,
 				44AFC3A01F0D50E7006BD1D8 /* SQLite.framework in Frameworks */,
+				4AF701988AB5FC9424C40BE1 /* Pods_KaraokePlaylist.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,6 +147,7 @@
 		443F9A9D1F0910900036EF75 = {
 			isa = PBXGroup;
 			children = (
+				4436B5941F1216B8008E5ED5 /* GoogleService-Info.plist */,
 				447EAA871F0FDDFE0075488F /* bg_karaoke.png */,
 				447EAA881F0FDDFE0075488F /* bg_3.png */,
 				447EAA891F0FDDFE0075488F /* bg_2.png */,
@@ -172,6 +179,7 @@
 				443F9AAB1F0910900036EF75 /* ViewController.swift */,
 				445CB4A51F0D6C9D00BB6CB2 /* DetailViewController.swift */,
 				445CB4A71F0D727900BB6CB2 /* OptionsController.swift */,
+				4436B5971F121948008E5ED5 /* DriveController.swift */,
 				443F9AAD1F0910900036EF75 /* Main.storyboard */,
 				443F9AB01F0910900036EF75 /* Assets.xcassets */,
 				443F9AB21F0910900036EF75 /* LaunchScreen.storyboard */,
@@ -374,6 +382,7 @@
 				443F9AAF1F0910900036EF75 /* Main.storyboard in Resources */,
 				447EAA8A1F0FDDFE0075488F /* bg_karaoke.png in Resources */,
 				447EAA8C1F0FDDFE0075488F /* bg_2.png in Resources */,
+				4436B5951F1216B8008E5ED5 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -450,6 +459,7 @@
 				443F9AAA1F0910900036EF75 /* AppDelegate.swift in Sources */,
 				44AFC39E1F0D4CEF006BD1D8 /* Karaoke.swift in Sources */,
 				445CB4A61F0D6C9D00BB6CB2 /* DetailViewController.swift in Sources */,
+				4436B5981F121948008E5ED5 /* DriveController.swift in Sources */,
 				445CB4A81F0D727900BB6CB2 /* OptionsController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

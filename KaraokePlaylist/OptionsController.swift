@@ -21,6 +21,36 @@ class OptionsController: UITableViewController {
         
     }
     
+    
+    override func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
+        let header = view as! UITableViewHeaderFooterView
+        
+        let db = try! Connection("\(self.path)/db.sqlite3")
+        let karaoke = Table("karaoke")
+        let id = Expression<Int64>("id")
+        let comp_id = Expression<String?>("comp_id")
+        let artist = Expression<String>("artist")
+        let song = Expression<String>("song")
+        let quality = Expression<String>("quality")
+        
+        try! db.run(karaoke.create(ifNotExists: true) { t in
+            t.column(id, primaryKey: true)
+            t.column(comp_id, unique: true)
+            t.column(artist)
+            t.column(song)
+            t.column(quality)
+        })
+        
+        let count = try! db.scalar(karaoke.count)
+        
+        header.textLabel?.text = "Всего записей: \(count)"
+    }
+
+    
+    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
+        return false
+    }
+    
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if indexPath.row == 0 {
             let fileBrowser = FileBrowser()
@@ -30,6 +60,7 @@ class OptionsController: UITableViewController {
                 self.loadXLSFile(xlsPath: file.filePath.path)
                 print(file.filePath.path)
             }
+            _ = navigationController?.popViewController(animated: true)
         }
         
         if indexPath.row == 1 {
@@ -37,10 +68,46 @@ class OptionsController: UITableViewController {
         }
         
         if indexPath.row == 2 {
-            //
+            
+            struct defaultsKeys {
+                static let pswd = "password"
+            }
+            let defaults = UserDefaults.standard
+
+
+            let newWordPrompt = UIAlertController(title: "Администрирование", message: "Введите пароль!", preferredStyle: UIAlertControllerStyle.alert)
+            
+            newWordPrompt.addTextField(configurationHandler: { (textField: UITextField!) in
+                textField.placeholder = "Введите пароль"
+            })
+            
+            newWordPrompt.addTextField(configurationHandler: { (textField: UITextField!) in
+                textField.placeholder = "Повторите пароль"
+            })
+
+            newWordPrompt.addAction(UIAlertAction(title: "Отмена", style: UIAlertActionStyle.default, handler: nil))
+            newWordPrompt.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: {
+                alert -> Void in
+                
+                let passField = newWordPrompt.textFields![0] as UITextField
+                let passConrirmField = newWordPrompt.textFields![1] as UITextField
+                
+                if passField.text == passConrirmField.text {
+                    defaults.set(passField.text,forKey: defaultsKeys.pswd)
+                } else {
+                    self.present(newWordPrompt, animated: true, completion: nil)
+                }
+                
+            }))
+            
+            self.present(newWordPrompt, animated: true, completion: nil)
         }
         
-        _ = navigationController?.popViewController(animated: true)
+        if indexPath.row == 3 {
+            self.performSegue(withIdentifier: "googledrive", sender: self)
+        }
+        
+        
 
     }
     
